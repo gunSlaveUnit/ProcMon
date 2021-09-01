@@ -4,3 +4,4 @@ Made by Aleksander Tyamin
 """
 
 APPLICATION_TITLE = 'CPU_RAM_MONITOR'
+DATA_POLLING_RATE_MS = 1000

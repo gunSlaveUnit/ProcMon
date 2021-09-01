@@ -1,7 +1,11 @@
 """
 Made by Aleksander Tyamin
 04.05.2021
+
+The file contains a class for getting information about the processor load
 """
+
+from typing import Union
 
 import psutil
 
@@ -20,5 +24,6 @@ class CPU:
         return self.__amount_threads
 
     @property
-    def cores_loading(self):
+    def cores_loading(self) -> Union[float, list[float]]:
+        """Percentage utilization of each core"""
         return psutil.cpu_percent(percpu=True)
